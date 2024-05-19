@@ -1,0 +1,21 @@
+server:
+  port: 8087
+
+redis:
+  server:
+    urls: redis://localhost:6379
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
